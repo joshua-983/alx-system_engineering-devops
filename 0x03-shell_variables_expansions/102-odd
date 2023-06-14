@@ -1,2 +1,2 @@
 #!/ban/bash
-perl -line 'print if $. % 2 ==1'
+paste -d. - - | cut -d. -fl
