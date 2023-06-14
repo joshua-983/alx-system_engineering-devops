@@ -1,2 +1,2 @@
-#!/ban/bash
-paste -d. - - | cut -d. -fl
+#!/bin/bash
+paste -d. - - | cut -d. -f1
