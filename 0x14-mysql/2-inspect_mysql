@@ -1,0 +1,44 @@
+sudo mysql
+
+# Created a database name tyrell_corp
+CREATE DATABASE tyrell_corp;
+
+# Selected the database
+USE tyrell_corp;
+
+# Use to display all available database
+SHOW DATABASES
+
+# Created a table named nexus6 in the selected database with a column named name that accepts max of 20 characters
+CREATE TABLE nexus6 (id ()name VARCHAR(20));
+
+# Inserted into the table column nexus6, a row for value 'Bright' in the name column
+INSERT INTO nexus6 VALUES('Bright');
+
+# Used to show all values stored in  table nexus6
+SELECT * FROM nexus6;
+
+
+========================================================================
+
+
+## Second server
+sudo mysql
+
+# Created a database name tyrell_corp
+CREATE DATABASE tyrell_corp;
+
+# Selected the database
+USE tyrell_corp;
+
+# Use to display all available database
+SHOW DATABASES
+
+# Created a table named nexus6 in the selected database with a column named name that accepts max of 20 characters
+CREATE TABLE nexus6 (id NUMERIC(3), name VARCHAR(20));
+
+# Inserted into the table column nexus6, a row for value 'Bright' in the name column
+INSERT INTO nexus6 VALUES(1, 'Bright');
+
+# Used to show all values stored in  table nexus6
+SELECT * FROM nexus6;

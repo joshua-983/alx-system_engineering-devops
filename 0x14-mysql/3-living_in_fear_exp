@@ -1,0 +1,10 @@
+sudo mysql
+mysql> CREATE USER 'replica_user'@'%' IDENTIFIED BY 'password';
+mysql> GRANT REPLICATION SLAVE ON * . * TO 'replica_user'@'%';
+FLUSH PRIVILEGES;
+
+
+
+SHOW GRANTS FOR 'replica_user'@'%';
+exit
+mysql -uholberton_user -p -e "SHOW GRANTS FOR 'holberton_user'@'localhost'"

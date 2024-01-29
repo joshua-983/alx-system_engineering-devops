@@ -1,0 +1,10 @@
+sudo mysql
+mysql> CREATE USER 'holberton_user'@'localhost' IDENTIFIED BY 'projectcorrection280hbtn';
+mysql> GRANT ALL PRIVILEGES ON * . * TO 'holberton_user'@'localhost';
+FLUSH PRIVILEGES;
+
+
+
+mysql> SHOW GRANTS FOR 'holberton_user'@'localhost';
+exit
+mysql -uholberton_user -p -e "SHOW GRANTS FOR 'holberton_user'@'localhost'"
