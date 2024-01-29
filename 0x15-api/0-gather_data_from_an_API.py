@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Generate a Todo list for a given employee id"""
+"""Generate a ToDO list for a given employee id"""
 import requests
 from sys import argv
 
